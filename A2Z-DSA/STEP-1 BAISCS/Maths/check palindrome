@@ -1,0 +1,23 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+       int n,b=0; 
+       int c=x;
+       if(x<0){
+           return false;
+       }
+       else{
+             while(x!=0){
+           n=x%10;
+           b=(10*b)+n;
+           x=x/10;
+       }
+       if(b==c){
+           return true;
+       }
+       else{
+           return false;
+       }
+       }
+     
+    }
+}
