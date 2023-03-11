@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class array_IO {
     public static void main(String[] args) {
         Scanner in= new Scanner(System.in);
-        int[] ros; //decalaration of arrays; compile time
+        int[] ros; //declaration of arrays; compile time
         ros=new int[5]; //run time (dynamic memory allocation )memory locations(heap) also int[] ros=new int[5];
         for(int i=0;i< ros.length;i++){
             ros[i]=in.nextInt();
