@@ -9,6 +9,7 @@ public class SeiveOfEratosthenes {
         boolean[] prime=new boolean[a+1];
         seive(a,prime);
     }
+//    TIME COMPLEXITY= O * log(log n)
 
     static void seive(int n,boolean[] prime){
            for(int i=2;i*i<=n;i++) {
