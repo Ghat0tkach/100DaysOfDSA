@@ -4,8 +4,9 @@ public class MaximumSubArraySum {
     //leetcode:https://leetcode.com/problems/maximum-subarray/
 
         public static void main(String[] args) {
-            int[] nums={-2,1,-3,4,-1,2,1,-5,4};
-            System.out.println(maxSubArray(nums));
+//            int[] nums={-2,1,-3,4,-1,2,1,-5,4};
+            int[] nums={-2,-1,-2,-4};
+            System.out.println(KadaneAlgorithm(nums));
         }
         static int maxSubArray(int[] nums) {
             //TLE

@@ -1,8 +1,13 @@
 package Medium;
 
+import java.util.Arrays;
+import java.util.Optional;
+
 public class SortColors {
     public static void main(String[] args) {
-            
+            int[] arr={0,1,0,2,0,2,1,2};
+            Optimalsoln(arr);
+        System.out.println(Arrays.toString(arr));
     }
     static void Optimalsoln(int[] nums) {
         int red = 0, white = 0, blue = nums.length - 1;
