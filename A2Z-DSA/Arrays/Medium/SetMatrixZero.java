@@ -1,10 +1,15 @@
 package Medium;
 
+import java.util.Arrays;
+
 public class SetMatrixZero {
     public static void main(String[] args) {
+       int[][] arr={{1,1,1},{1,0,1},{1,1,1}};
+       setZeroes(arr);
+        System.out.println(Arrays.toString(arr));
 
     }
-    public void setZeroes(int[][] matrix) {
+   static void setZeroes(int[][] matrix) {
         int m = matrix.length; // number of rows
         int n = matrix[0].length; // number of columns
 
