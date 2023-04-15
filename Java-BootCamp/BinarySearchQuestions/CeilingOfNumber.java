@@ -3,7 +3,7 @@ package BinarySearchQuestions;
 public class CeilingOfNumber {
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 9, 14, 16,17, 18};
-        int a=Ceiling(arr,15);
+        int a=Ceiling(arr,14);
         System.out.println(arr[a]);
 
     }
