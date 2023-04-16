@@ -2,9 +2,10 @@ package BinarySearchQuestions;
 
 public class PeakIndexInMountainArray {
     public static void main(String[] args) {
-
+     int[] arr={3,1,2};
+        System.out.println(peakindexinmountainarray(arr));
     }
-    public int peakindexinmountainarray(int[] arr){
+    static int peakindexinmountainarray(int[] arr){
         int start=0;
         int end=arr.length-1;
 
@@ -18,8 +19,8 @@ public class PeakIndexInMountainArray {
                //ascending part of array
                start=mid+1;
            }
-
+            return mid+1;
         }
-        return -1;
+      return -1;
     }
 }
