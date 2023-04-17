@@ -4,7 +4,7 @@ public class FindMinInSortedArray {
     public static void main(String[] args) {
         int[] arr={2,3,4,5,1};
         int[] arr2={1,2,3,4,5};
-       
+        long k = (long) (Math.sqrt(2 *  0.25) - 0.5);
     }
 
        static int findMin(int[] nums) {
