@@ -4,28 +4,28 @@ import  java.util.Scanner;
 import java.lang.String;
 public class LargestOddInteger {
     public static void main(String[] args) {
-        String s="2302";
-        int max=0;
-        char lastChar = s.charAt(s.length() - 1);
-        int m=(int)lastChar-'0';
-        if(m%2!=0){
-            System.out.println(s);
-        }
+           String num="23030";
+            String largestOdd = "";
+            StringBuilder window = new StringBuilder();
 
-     else{
-            for(int i=0;i<s.length();i++){
-                char c=s.charAt(i);
-                int a=(int)c-'0';
-                if((a%2!=0) && a>max){
-                    max=a;
+            for (int i = 0; i < num.length(); i++) {
+                char c = num.charAt(i);
+                if (c % 2 != 0) { // Odd integer found
+                    window.append(c);
+                    largestOdd = window.toString();
+                } else { // Even integer found
+                    window.setLength(0); // Reset the window
                 }
-
-
             }
-            System.out.println(max);
-
+        if (num.charAt(num.length() - 1) % 2 != 0) {
+            System.out.println(num); // Return the entire number if the last digit is odd
+        } else {
+            System.out.println(largestOdd);; // Return the largest odd integer found
         }
+
+    
 
     }
+
 
 }
